@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8F003F4866DD62D5DE16BE /* Pods_internalChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8702DA08F65BD3E6520990 /* Pods_internalChat.framework */; };
+		9E04B91F1F338A35007F0E06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04B91E1F338A35007F0E06 /* LoginViewController.swift */; };
 		9E8CFD3D1F338604007A4AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CFD3C1F338604007A4AF2 /* AppDelegate.swift */; };
 		9E8CFD3F1F338604007A4AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CFD3E1F338604007A4AF2 /* ViewController.swift */; };
 		9E8CFD421F338604007A4AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD401F338604007A4AF2 /* Main.storyboard */; };
 		9E8CFD441F338604007A4AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD431F338604007A4AF2 /* Assets.xcassets */; };
 		9E8CFD471F338604007A4AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD451F338604007A4AF2 /* LaunchScreen.storyboard */; };
+		9E8CFD4F1F338671007A4AF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		304709A33A8CCBF63BDD8089 /* Pods-internalChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-internalChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-internalChat/Pods-internalChat.debug.xcconfig"; sourceTree = "<group>"; };
+		957AB270B339D88EF69FA954 /* Pods-internalChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-internalChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-internalChat/Pods-internalChat.release.xcconfig"; sourceTree = "<group>"; };
+		9E04B91E1F338A35007F0E06 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E8CFD391F338604007A4AF2 /* internalChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = internalChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8CFD3C1F338604007A4AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E8CFD3E1F338604007A4AF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		9E8CFD431F338604007A4AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8CFD461F338604007A4AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8CFD481F338604007A4AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD8702DA08F65BD3E6520990 /* Pods_internalChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_internalChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8F003F4866DD62D5DE16BE /* Pods_internalChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E04B91D1F338A03007F0E06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E04B91E1F338A35007F0E06 /* LoginViewController.swift */,
+				9E8CFD3E1F338604007A4AF2 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		9E8CFD301F338604007A4AF2 = {
 			isa = PBXGroup;
 			children = (
 				9E8CFD3B1F338604007A4AF2 /* internalChat */,
 				9E8CFD3A1F338604007A4AF2 /* Products */,
+				B45A8B2F49C9EC55F6164953 /* Pods */,
+				B0445C88E383672DF077B396 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,32 @@
 		9E8CFD3B1F338604007A4AF2 /* internalChat */ = {
 			isa = PBXGroup;
 			children = (
+				9E04B91D1F338A03007F0E06 /* Controller */,
 				9E8CFD3C1F338604007A4AF2 /* AppDelegate.swift */,
-				9E8CFD3E1F338604007A4AF2 /* ViewController.swift */,
 				9E8CFD401F338604007A4AF2 /* Main.storyboard */,
 				9E8CFD431F338604007A4AF2 /* Assets.xcassets */,
 				9E8CFD451F338604007A4AF2 /* LaunchScreen.storyboard */,
 				9E8CFD481F338604007A4AF2 /* Info.plist */,
+				9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */,
 			);
 			path = internalChat;
+			sourceTree = "<group>";
+		};
+		B0445C88E383672DF077B396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8702DA08F65BD3E6520990 /* Pods_internalChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B45A8B2F49C9EC55F6164953 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				304709A33A8CCBF63BDD8089 /* Pods-internalChat.debug.xcconfig */,
+				957AB270B339D88EF69FA954 /* Pods-internalChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E8CFD4B1F338604007A4AF2 /* Build configuration list for PBXNativeTarget "internalChat" */;
 			buildPhases = (
+				551B7331B1AEC41043936CF4 /* [CP] Check Pods Manifest.lock */,
 				9E8CFD351F338604007A4AF2 /* Sources */,
 				9E8CFD361F338604007A4AF2 /* Frameworks */,
 				9E8CFD371F338604007A4AF2 /* Resources */,
+				6C5008AF312A93A3FFD76B4E /* [CP] Embed Pods Frameworks */,
+				D91C7E0BCDC0B5BD4DC8EC44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +137,7 @@
 				TargetAttributes = {
 					9E8CFD381F338604007A4AF2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6SJ9C8L83A;
+						DevelopmentTeam = 7PCRL22P9T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E8CFD471F338604007A4AF2 /* LaunchScreen.storyboard in Resources */,
+				9E8CFD4F1F338671007A4AF2 /* GoogleService-Info.plist in Resources */,
 				9E8CFD441F338604007A4AF2 /* Assets.xcassets in Resources */,
 				9E8CFD421F338604007A4AF2 /* Main.storyboard in Resources */,
 			);
@@ -132,11 +174,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		551B7331B1AEC41043936CF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C5008AF312A93A3FFD76B4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-internalChat/Pods-internalChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91C7E0BCDC0B5BD4DC8EC44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-internalChat/Pods-internalChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E8CFD351F338604007A4AF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E04B91F1F338A35007F0E06 /* LoginViewController.swift in Sources */,
 				9E8CFD3F1F338604007A4AF2 /* ViewController.swift in Sources */,
 				9E8CFD3D1F338604007A4AF2 /* AppDelegate.swift in Sources */,
 			);
@@ -261,9 +352,10 @@
 		};
 		9E8CFD4C1F338604007A4AF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304709A33A8CCBF63BDD8089 /* Pods-internalChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6SJ9C8L83A;
+				DEVELOPMENT_TEAM = 7PCRL22P9T;
 				INFOPLIST_FILE = internalChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanSaldivar.internalChat;
@@ -274,9 +366,10 @@
 		};
 		9E8CFD4D1F338604007A4AF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957AB270B339D88EF69FA954 /* Pods-internalChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6SJ9C8L83A;
+				DEVELOPMENT_TEAM = 7PCRL22P9T;
 				INFOPLIST_FILE = internalChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanSaldivar.internalChat;
@@ -304,6 +397,7 @@
 				9E8CFD4D1F338604007A4AF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
