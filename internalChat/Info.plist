@@ -39,5 +39,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Por que queremos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>por que puedo</string>
 </dict>
 </plist>

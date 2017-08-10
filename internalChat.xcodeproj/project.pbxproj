@@ -15,6 +15,10 @@
 		9E8CFD441F338604007A4AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD431F338604007A4AF2 /* Assets.xcassets */; };
 		9E8CFD471F338604007A4AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD451F338604007A4AF2 /* LaunchScreen.storyboard */; };
 		9E8CFD4F1F338671007A4AF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */; };
+		9EA34FCA1F38C48100983754 /* NewMenssageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA34FC91F38C48100983754 /* NewMenssageTableViewController.swift */; };
+		9EA34FCD1F38CC3600983754 /* UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA34FCC1F38CC3600983754 /* UserApp.swift */; };
+		9EE9D3381F3CB77E00812526 /* LoginController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9D3371F3CB77E00812526 /* LoginController+Handlers.swift */; };
+		9EE9D33B1F3CDBAB00812526 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9D33A1F3CDBAB00812526 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		9E8CFD461F338604007A4AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8CFD481F338604007A4AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EA34FC91F38C48100983754 /* NewMenssageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMenssageTableViewController.swift; sourceTree = "<group>"; };
+		9EA34FCC1F38CC3600983754 /* UserApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
+		9EE9D3371F3CB77E00812526 /* LoginController+Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+Handlers.swift"; sourceTree = "<group>"; };
+		9EE9D33A1F3CDBAB00812526 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CD8702DA08F65BD3E6520990 /* Pods_internalChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_internalChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +57,8 @@
 			children = (
 				9E04B91E1F338A35007F0E06 /* LoginViewController.swift */,
 				9E8CFD3E1F338604007A4AF2 /* ViewController.swift */,
+				9EA34FC91F38C48100983754 /* NewMenssageTableViewController.swift */,
+				9EE9D3371F3CB77E00812526 /* LoginController+Handlers.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -74,6 +84,8 @@
 		9E8CFD3B1F338604007A4AF2 /* internalChat */ = {
 			isa = PBXGroup;
 			children = (
+				9EE9D3391F3CDB7D00812526 /* Helpers */,
+				9EA34FCB1F38CBD400983754 /* Model */,
 				9E04B91D1F338A03007F0E06 /* Controller */,
 				9E8CFD3C1F338604007A4AF2 /* AppDelegate.swift */,
 				9E8CFD401F338604007A4AF2 /* Main.storyboard */,
@@ -83,6 +95,22 @@
 				9E8CFD4E1F338671007A4AF2 /* GoogleService-Info.plist */,
 			);
 			path = internalChat;
+			sourceTree = "<group>";
+		};
+		9EA34FCB1F38CBD400983754 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA34FCC1F38CC3600983754 /* UserApp.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EE9D3391F3CDB7D00812526 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9EE9D33A1F3CDBAB00812526 /* Extensions.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		B0445C88E383672DF077B396 /* Frameworks */ = {
@@ -227,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE9D3381F3CB77E00812526 /* LoginController+Handlers.swift in Sources */,
 				9E04B91F1F338A35007F0E06 /* LoginViewController.swift in Sources */,
 				9E8CFD3F1F338604007A4AF2 /* ViewController.swift in Sources */,
 				9E8CFD3D1F338604007A4AF2 /* AppDelegate.swift in Sources */,
+				9EA34FCD1F38CC3600983754 /* UserApp.swift in Sources */,
+				9EA34FCA1F38C48100983754 /* NewMenssageTableViewController.swift in Sources */,
+				9EE9D33B1F3CDBAB00812526 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
